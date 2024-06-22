@@ -1,4 +1,6 @@
 import Image from 'next/image'
+import useOnScreen from '@/app/hooks/useOnScreen'
+import { useRef } from 'react'
 
 type ProjectInfoProps = {
   title: string
@@ -17,17 +19,22 @@ export default function ProjectInfo({
   github_url,
   imageURL,
 }: ProjectInfoProps) {
+  const onboardWrapRef = useRef<HTMLDivElement>(null!)
+  const isVisible = useOnScreen(onboardWrapRef)
+
   const container = {
     common:
       'p-16 mt-4 bg-background-light rounded-xl bg-gray-700 m-20 transition ease-in-out hover:scale-105 hover:shadow-xl',
     hover: 'hover:cursor-pointer',
     web: 'grid grid-cols-12 w-[92%]',
     mobile: 'grid grid-cols-1',
+    animation: `transition-opacity duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`,
   }
 
   return (
     <div
-      className={`${container.common} ${container.hover} ${container.mobile} md:${container.web}`}>
+      className={`${container.common} ${container.hover} ${container.mobile} md:${container.web} ${container.animation}`}
+      ref={onboardWrapRef}>
       <div className="relative col-start-1 col-end-6 bg-background-light mr-8">
         <Image
           src={imageURL}
