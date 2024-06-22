@@ -10,7 +10,7 @@ const Header = () => {
   const menuClass = isMenuOpen ? 'menu-slide-enter-active' : 'menu-slide-enter'
 
   const container = {
-    common: 'flex items-center justify-between bg-background-light text-white',
+    common: 'w-full flex items-center justify-between bg-background-light text-white',
     web: 'md:px-10 md:h-20',
     mobile: 'px-4 h-16',
   }
