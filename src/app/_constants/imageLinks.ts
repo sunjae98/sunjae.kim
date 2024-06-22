@@ -27,3 +27,19 @@ export const LOGO_IMG = {
     disquiet: '/logo/Disquiet.webp',
   },
 } as const
+
+export const ICON_IMG = {
+  github: '/icon/github_icon.webp',
+  kakao: '/icon/kakao_icon.webp',
+  linkedIn: '/icon/linkedin_icon.webp',
+  mail: '/icon/mail_icon.webp',
+  medium: '/icon/medium_icon.webp',
+  tistory: '/icon/tistory_icon.webp',
+} as const
+
+export const PROJECT_IMG = {
+  gtd: '/icon/gtd.gif',
+  checkit: '/icon/checkit.webp',
+  t4y: '/icon/t4y.webp',
+  studymate: '/icon/studymate.webp',
+} as const
