@@ -21,7 +21,6 @@ export default function Page() {
       .then((response) => response.json())
       .then((data) => {
         setProjects(data.projects)
-        console.log(data)
       })
       .catch((error) => console.error('Error:', error))
   }, [])
