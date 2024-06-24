@@ -4,6 +4,7 @@ import { useRef } from 'react'
 
 type ProjectInfoProps = {
   title: string
+  position: string
   description: string
   period: string
   introduction_url: string
@@ -13,6 +14,7 @@ type ProjectInfoProps = {
 
 export default function ProjectInfo({
   title,
+  position,
   description,
   period,
   introduction_url,
@@ -24,7 +26,7 @@ export default function ProjectInfo({
 
   const container = {
     common:
-      'p-16 mt-4 bg-background-light rounded-xl bg-gray-700 m-20 transition ease-in-out hover:scale-105 hover:shadow-xl',
+      'p-16 my-4 bg-background-light rounded-xl bg-gray-700 mx-20 transition ease-in-out hover:scale-105 hover:shadow-xl',
     hover: 'hover:cursor-pointer',
     web: 'grid grid-cols-12 w-[92%]',
     mobile: 'grid grid-cols-1',
@@ -46,8 +48,9 @@ export default function ProjectInfo({
       </div>
       <div
         className={`col-start-6 col-end-13 p-4 bg-background-light text-white flex flex-col justify-center gap-4`}>
-        <div className="flex flex-col gap-2 md:flex-row">
+        <div className="flex flex-col gap-2 md:flex-row items-center">
           <div className="text-xl font-bold md:text-4xl">{title}</div>
+          <div className="text-sm font-bold md:text-xl text-gray-400">{position}</div>
         </div>
         <div className="flex flex-row gap-4 items-center">
           <div className="text-sm md:text-xl text-gray-400">{description}</div>

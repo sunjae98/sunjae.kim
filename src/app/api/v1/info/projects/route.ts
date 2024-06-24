@@ -5,15 +5,8 @@ export async function GET() {
   //mock data
   const res = [
     {
-      title: 'GiToDoc',
-      description: '깃허브 레포지토리 연동을 통한 자동 문서화 서비스',
-      imageURL: PROJECT_IMG.gtd,
-      date: '2023.12 ~ 2024.02',
-      introduction: 'https://medium.com/gitodoc',
-      github: 'https://github.com/2023WB-TeamB',
-    },
-    {
       title: 'Check It',
+      position: 'FrontEnd',
       description: '그래프 기반 독서 기록 서비스',
       imageURL: PROJECT_IMG.checkit,
       date: '2023.08 ~ 2023.11',
@@ -21,10 +14,29 @@ export async function GET() {
       github: 'https://github.com/techeer-sv/Checkit',
     },
     {
+      title: 'GiToDoc',
+      description: '깃허브 레포지토리 연동을 통한 자동 문서화 서비스',
+      position: 'TeamLeader/BE',
+      imageURL: PROJECT_IMG.gtd,
+      date: '2023.12 ~ 2024.02',
+      introduction: 'https://medium.com/gitodoc',
+      github: 'https://github.com/2023WB-TeamB',
+    },
+    {
+      title: 'Studymate',
+      description: '실시간 매칭을 통한 학습 도움 플랫폼',
+      position: 'TeamLeader/FE',
+      imageURL: PROJECT_IMG.studymate,
+      date: '2023.01 ~ 2023.06',
+      introduction: '-',
+      github: 'https://github.com/TUK2024CD-Studymate',
+    },
+    {
       title: 'This is 4 you',
       description: '나만의 네컷 프레임 사진을 만들어주는 서비스',
+      position: 'FrontEnd',
       imageURL: PROJECT_IMG.t4y,
-      date: '(2023.06 ~ 2023.08)',
+      date: '2023.06 ~ 2023.08',
       introduction: 'https://medium.com/t4y',
       github: 'https://github.com/2023SB-TeamJ/2023SB-Team-J',
     },

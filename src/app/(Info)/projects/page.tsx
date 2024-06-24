@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react'
 
 type Project = {
   title: string
+  position: string
   description: string
   date: string
   introduction: string
@@ -32,6 +33,7 @@ export default function Page() {
         <ProjectInfo
           key={index}
           title={project.title}
+          position={project.position}
           description={project.description}
           period={project.date}
           introduction_url={project.introduction}
