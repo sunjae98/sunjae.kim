@@ -28,7 +28,7 @@ export default function ProjectInfo({
 
   const container = {
     common:
-      'p-16 my-4 bg-background-light rounded-xl bg-gray-700 mx-20 transition ease-in-out hover:scale-105 hover:shadow-xl',
+      'p-8 my-4 bg-background-light rounded-xl bg-gray-700 mx-20 transition ease-in-out hover:scale-105 hover:shadow-xl',
     hover: 'hover:cursor-pointer',
     web: 'grid grid-cols-12 w-[92%]',
     mobile: 'grid grid-cols-1',
