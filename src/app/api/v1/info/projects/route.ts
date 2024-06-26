@@ -12,6 +12,7 @@ export async function GET() {
       date: '2023.08 ~ 2023.11',
       introduction: 'https://medium.com/checkit',
       github: 'https://github.com/techeer-sv/Checkit',
+      slug: 'checkit',
     },
     {
       title: 'GiToDoc',
@@ -21,6 +22,7 @@ export async function GET() {
       date: '2023.12 ~ 2024.02',
       introduction: 'https://medium.com/gitodoc',
       github: 'https://github.com/2023WB-TeamB',
+      slug: 'gitodoc',
     },
     {
       title: 'Studymate',
@@ -30,6 +32,7 @@ export async function GET() {
       date: '2023.01 ~ 2023.06',
       introduction: '-',
       github: 'https://github.com/TUK2024CD-Studymate',
+      slug: 'studymate',
     },
     {
       title: 'This is 4 you',
@@ -39,6 +42,7 @@ export async function GET() {
       date: '2023.06 ~ 2023.08',
       introduction: 'https://medium.com/t4y',
       github: 'https://github.com/2023SB-TeamJ/2023SB-Team-J',
+      slug: 't4y',
     },
   ]
 

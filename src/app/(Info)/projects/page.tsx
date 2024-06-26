@@ -3,6 +3,7 @@
 import ProjectInfo from '@/app/_components/info/ProjectInfo'
 import { API_URL } from '@/app/_constants/urls'
 import { useEffect, useState } from 'react'
+import { useRouter } from 'next/navigation'
 
 type Project = {
   title: string
@@ -12,10 +13,12 @@ type Project = {
   introduction: string
   github: string
   imageURL: string
+  slug: string
 }
 
 export default function Page() {
   const [projects, setProjects] = useState<Project[]>([])
+  const router = useRouter()
 
   useEffect(() => {
     fetch(`${API_URL}info/projects`)
@@ -39,6 +42,7 @@ export default function Page() {
           introduction_url={project.introduction}
           github_url={project.github}
           imageURL={project.imageURL}
+          onClick={() => router.push(`/projects/${project.slug}`)}
         />
       ))}
     </div>

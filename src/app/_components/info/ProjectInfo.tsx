@@ -10,6 +10,7 @@ type ProjectInfoProps = {
   introduction_url: string
   github_url: string
   imageURL: string
+  onClick?: () => void
 }
 
 export default function ProjectInfo({
@@ -20,6 +21,7 @@ export default function ProjectInfo({
   introduction_url,
   github_url,
   imageURL,
+  onClick,
 }: ProjectInfoProps) {
   const onboardWrapRef = useRef<HTMLDivElement>(null!)
   const isVisible = useOnScreen(onboardWrapRef)
@@ -36,7 +38,8 @@ export default function ProjectInfo({
   return (
     <div
       className={`${container.common} ${container.hover} ${container.mobile} md:${container.web} ${container.animation}`}
-      ref={onboardWrapRef}>
+      ref={onboardWrapRef}
+      onClick={onClick}>
       <div className="relative col-start-1 col-end-6 bg-background-light mr-8">
         <Image
           src={imageURL}
