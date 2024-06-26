@@ -26,7 +26,7 @@ export async function GET() {
     },
     {
       href: 'https://www.tistory.com/member/blog',
-      imgURL: ICON_IMG.tistory,
+      imgURL: ICON_IMG.velog,
       animationClass: 'animate-orbit5',
     },
   ]

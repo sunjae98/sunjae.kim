@@ -35,6 +35,7 @@ export const ICON_IMG = {
   mail: '/icon/mail_icon.webp',
   medium: '/icon/medium_icon.webp',
   tistory: '/icon/tistory_icon.webp',
+  velog: '/icon/velog_icon.webp',
 } as const
 
 export const PROJECT_IMG = {
