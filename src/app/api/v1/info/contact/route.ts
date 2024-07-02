@@ -25,7 +25,7 @@ export async function GET() {
       animationClass: 'animate-orbit4',
     },
     {
-      href: 'https://www.tistory.com/member/blog',
+      href: 'https://velog.io/@woal9844/posts',
       imgURL: ICON_IMG.velog,
       animationClass: 'animate-orbit5',
     },
