@@ -20,7 +20,7 @@ export async function GET() {
       period: '2024.01 ~ 2024.02',
       moreInfoURL:
         'https://www.tukorea.ac.kr/tukorea/1099/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGdHVrb3JlYSUyRjM3NiUyRjUwNzI4JTJGYXJ0Y2xWaWV3LmRvJTNGcGFnZSUzRDElMjZzcmNoQ29sdW1uJTNEc2olMjZzcmNoV3JkJTNEJUVDJThCJUE0JUVCJUE2JUFDJUVDJUJEJTk4JUVCJUIwJUI4JUVCJUE2JUFDJTI2YmJzQ2xTZXElM0QlMjZiYnNPcGVuV3JkU2VxJTNEJTI2cmdzQmduZGVTdHIlM0QlMjZyZ3NFbmRkZVN0ciUzRCUyNmlzVmlld01pbmUlM0RmYWxzZSUyNnBhc3N3b3JkJTNEJTI2',
-      imageURL: ACTICITY_IMG.winterBootcamp2023,
+      imageURL: ACTICITY_IMG.WB2023,
     },
     {
       title: '실리콘 밸리 SW Bootcamp',
@@ -29,7 +29,7 @@ export async function GET() {
       period: '2023.07 ~ 2023.08',
       moreInfoURL:
         'https://www.tukorea.ac.kr/tukorea/1099/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGdHVrb3JlYSUyRjM3NiUyRjQ2NjQ5JTJGYXJ0Y2xWaWV3LmRvJTNGcGFnZSUzRDElMjZzcmNoQ29sdW1uJTNEc2olMjZzcmNoV3JkJTNEJUVDJThCJUE0JUVCJUE2JUFDJUVDJUJEJTk4JUVCJUIwJUI4JUVCJUE2JUFDJTI2YmJzQ2xTZXElM0QlMjZiYnNPcGVuV3JkU2VxJTNEJTI2cmdzQmduZGVTdHIlM0QlMjZyZ3NFbmRkZVN0ciUzRCUyNmlzVmlld01pbmUlM0RmYWxzZSUyNnBhc3N3b3JkJTNEJTI2',
-      imageURL: ACTICITY_IMG.summerBootcamp2023,
+      imageURL: ACTICITY_IMG.SB2023,
     },
     {
       title: '아이디어 해커톤',

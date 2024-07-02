@@ -48,8 +48,8 @@ export const PROJECT_IMG = {
 export const ACTICITY_IMG = {
   techeer: '/activity/techeer.webp',
   hackathon: '/activity/hackathon.webp',
-  summerBootcamp2023: '/activity/summerbootcamp2023.webp',
-  winterBootcamp2023: '/activity/winterbootcamp2023.webp',
+  SB2023: '/activity/SB2023.webp',
+  WB2023: '/activity/WB2023.webp',
   feChallenge: '/activity/feChallenge.webp',
   ictHanium: '/activity/ictHanium.webp',
 } as const
